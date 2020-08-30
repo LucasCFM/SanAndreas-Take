@@ -1,0 +1,17 @@
+{
+  "name": "SanAndreas-Problem",
+  "version": "0.0.1",
+  "description": "SanAndreas Problem - Take Senior developer test",
+  "main": "main.js",
+  "repository": "https://github.com/LucasCFM/SanAndreas-Take",
+  "author": "Lucas Mendes (github.com/LucasCFM)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./src/main.js"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
