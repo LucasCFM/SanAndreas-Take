@@ -7,7 +7,6 @@ const graph = {
     WS: { SF: 2 },
     BC: { LV: 1 },
     RC: { LS: 2 },
-    // finish: {}
 };
 
 // TODO: Remove more than one path to same location, leave only the smalllest
