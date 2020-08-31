@@ -9,8 +9,20 @@ const lowestCostNode = (costs, processed) => {
 };
 
 
-// function that returns the minimum cost and path to reach Finish
-const dijkstra = (graph) => {
+// gets the lowest-cost path between start and end nodes on a graph
+const dijkstra = (graph, start, end) => {
+    /*
+    @param graph    dict    TODO:
+    @param start    string  a graph (dict) key
+    @param end      string  a graph (dict) key
+    */
+
+    if( !graph || !start || !end )
+        throw Error( 'All params must be provided' )
+    
+    // define/set start and finish references
+    graph['start'] = graph[start]
+    graph[end]['finish'] = 0
 
     // track lowest cost to reach each node
     const costs = Object.assign( {finish: Infinity}, graph.start );
