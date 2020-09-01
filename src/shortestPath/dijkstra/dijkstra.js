@@ -10,16 +10,7 @@ const lowestCostNode = (costs, processed) => {
 
 
 // gets the lowest-cost path between start and end nodes on a graph
-const dijkstra = (graph, start, end) => {
-    /*
-    @param graph    dict    TODO:
-    @param start    string  a graph (dict) key
-    @param end      string  a graph (dict) key
-    */
-
-    if( !graph || !start || !end )
-        throw Error( 'All params must be provided' )
-    
+const dijkstra = ( graph, start, end ) => {
     // define/set start and finish references
     graph['start'] = graph[start]
     graph[end]['finish'] = 0
