@@ -9,27 +9,17 @@ describe("Test readFile with non-exist file", () => {
         
         expect( async () => {
             await readFile( absolutePath )
-        }).toThrow( 'ENOENT' );
-        
-        // try {
-        //     await readFile( absolutePath );
-        // } catch( err ) {
-        //     expect( err.code ).toEqual( 'ENOENT' );
-        // }
+        }).rejects.toEqual( {error: 'ENOENT'} );
     });
 });
 
 
-// describe("Test readFile with bad-type file", () => {
-//     test("it should throw a error", async () => {
-//         const relativePath = '/sampleData/bad-type.asd';
-//         const absolutePath = getAbsoluteFromRelativePath( relativePath );
-//         try {
-//             await readFile( absolutePath );
-//         } catch( err ) {
-//             console.log( 'Error code of file type' );
-//             console.log( err.code );
-//             expect( err.code ).toEqual( 'ENOENT' );
-//         }
-//     });
-// });
+describe("Test readFile with bad-type file", () => {
+    test("it should throw a error", async () => {
+        const relativePath = '/sampleData/bad-type.asd';
+        const absolutePath = getAbsoluteFromRelativePath( relativePath );
+        expect( async () => {
+            await readFile( absolutePath )
+        }).rejects.toEqual( {error: 'Only text files allowed'} );
+    });
+});
