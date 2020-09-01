@@ -2,9 +2,8 @@ import readFile from '../../src/handler/fileHandler';
 import { getAbsoluteFromRelativePath } from '../../src/utils/utils'
 
 
-describe("File test path", () => {
-  test("it should return a array of lines inside file", () => {
-    return
+describe("readFile test path", () => {
+  test("it should return a array of lines inside file", async () => {
     const rightLines = [
       'LS SF 1',
       'SF LS 2',
@@ -21,8 +20,7 @@ describe("File test path", () => {
     ];
     const relativePath = '/sampleData/path/example-00.txt';
     const absolutePath = getAbsoluteFromRelativePath( relativePath );
-    const lines = readFile( absolutePath );
-    
+    const lines = await readFile( absolutePath );
     expect( lines ).toEqual( rightLines );
   });
 });
