@@ -9,7 +9,13 @@ describe("Test readFile with non-exist file", () => {
         
         expect( async () => {
             await readFile( absolutePath )
-        }).rejects.toEqual( {error: 'ENOENT'} );
+        }).rejects.toEqual({
+            code: "ENOENT",
+            errno: -2,
+            error: 'ENOENT',
+            path: absolutePath,
+            syscall: "open",
+        });
     });
 });
 
