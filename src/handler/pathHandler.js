@@ -20,19 +20,18 @@ const readPaths = async ( filePath ) => {
 
 const generateGraph = async ( filePath ) => {
     const paths = await readPaths( filePath );
-    console.log( 'paths:' );
-    console.log( paths );
     let graph = {};
     paths.map( (path) => {
+        if( !graph[path.origin] )
+            graph[path.origin] = {};
+        
         try {
-            graph[path.origin][path.destiny] = path.cost;
+            graph[path.origin][path.destiny] = Number( path.cost );
         } catch (error) {
             console.log( error );
             throw error;
         }
     });
-    console.log( 'graph:' );
-    console.log( graph );
     return graph;
 };
 
