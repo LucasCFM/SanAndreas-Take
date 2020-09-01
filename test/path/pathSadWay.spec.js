@@ -1,5 +1,5 @@
-import { readPaths, generateGraph } from '@/handler/pathHandler';
-import { getAbsoluteFromRelativePath } from '@utils/utils'
+import { readPaths, generateGraph } from '@/handler/pathHandler.js';
+import { getAbsoluteFromRelativePath } from '@utils/utils.js';
 
 
 // ======= TESTING readPaths =======

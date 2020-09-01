@@ -1,5 +1,5 @@
-import readFile from '@/handler/fileHandler';
-import { getAbsoluteFromRelativePath } from '@utils/utils'
+import readFile from '@/handler/fileHandler.js';
+import { getAbsoluteFromRelativePath } from '@utils/utils.js'
 
 
 describe("Test readFile with non-exist file", () => {

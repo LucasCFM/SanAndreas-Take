@@ -1,5 +1,5 @@
-import { readPackages } from '@/handler/packageHandler';
-import { getAbsoluteFromRelativePath } from '@utils/utils'
+import { readPackages } from '@/handler/packageHandler.js';
+import { getAbsoluteFromRelativePath } from '@utils/utils.js';
 
 
 describe("readPackages test path", () => {

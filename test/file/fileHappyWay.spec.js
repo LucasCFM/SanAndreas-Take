@@ -1,5 +1,5 @@
-import readFile from '../../src/handler/fileHandler';
-import { getAbsoluteFromRelativePath } from '../../src/utils/utils'
+import readFile from '@/handler/fileHandler.js';
+import { getAbsoluteFromRelativePath } from '@/utils/utils.js'
 
 
 describe("readFile test path", () => {
