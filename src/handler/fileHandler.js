@@ -1,14 +1,19 @@
 import fs from 'fs';
+import { getFileType } from '@utils/utils.js';
 
 
-const getFileLines = async ( filePath ) => {
+const readFile = async ( filePath ) => {
     // checks if file extension. Must be .txt file
     
+    const fileType = getFileType( filePath );
     console.log( 'fileType:' )
     console.log( fileType )
-    if( fileType !== 'txt' ) throw Error( 'Only text files allowed' )
+    if( fileType !== 'txt' )
+        throw Error( 'Only text files allowed' )
     
+    console.log('ANTES DO DATA')
     const data = await fs.promises.readFile(filePath, 'utf8');
+    console.log('PASSOU DO DATA')
     const lines = data.toString().split("\n");
     for( i in lines ) {
         console.log( 'readFile line:' );
@@ -17,4 +22,4 @@ const getFileLines = async ( filePath ) => {
     return lines;
 };
 
-export default getFileLines;
+export default readFile;

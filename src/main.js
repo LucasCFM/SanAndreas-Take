@@ -1,3 +1,4 @@
+import 'module-alias/register.js';
 import dijkstra from './dijkstra/dijkstra.js';
 
 const graph = {

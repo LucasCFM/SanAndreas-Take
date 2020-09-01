@@ -11,11 +11,24 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node ./src/main.js"
   },
+  "_moduleAliases": {
+    "@": "./src",
+    "@utils": "./src/utils"
+  },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageReporters": [
+      "html"
+    ],
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/src/$1",
+      "@utils/(.*)": "<rootDir>/src/utils/$1"
+    }
   },
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
   }
 }
