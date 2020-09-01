@@ -5,13 +5,12 @@ import path from 'path';
 const getAbsoluteFromRelativePath = ( relativePath ) => {
     // relativePath must be relative from the script root path
     // root scritp: main.js
-    const rootPath = process.cwd()
     
+    const rootPath = process.cwd();
     if( relativePath.charAt(0) !== '/' )
         relativePath = '/' + relativePath;
-    
     return rootPath + relativePath;
-}
+};
 
 
 // returns the last extension of a file
