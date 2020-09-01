@@ -11,10 +11,6 @@ const readFile = async ( filePath ) => {
     
     const data = await fs.promises.readFile(filePath, 'utf8');
     const lines = data.toString().split("\n");
-    for( i in lines ) {
-        console.log( 'readFile line:' );
-        console.log( lines[i] );
-    }
     return lines;
 };
 
