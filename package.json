@@ -8,8 +8,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node ./src/main.js"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
   },
   "devDependencies": {
     "jest": "^26.4.2"
