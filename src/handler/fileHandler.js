@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { getFileType } from '@utils/utils.js';
+import { getFileType } from '../utils/utils.js';
 
 
 const readFile = async ( filePath ) => {

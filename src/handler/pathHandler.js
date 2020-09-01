@@ -1,4 +1,4 @@
-import readFile from './fileHandler';
+import readFile from './fileHandler.js';
 
 
 const formatPath = ( pathLine ) => {
