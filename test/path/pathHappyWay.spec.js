@@ -28,3 +28,19 @@ describe("readPaths test path", () => {
 
 
 // ======= TESTING generateGraph =======
+describe("readPaths test path", () => {
+    test("it should return a array of dictionary informing origin, destiny and cost", async () => {
+        const rightGraph = {
+            LS: { SF: 1, LV: 1, RC: 1 },
+            SF: { LS: 2, WS: 1, LV: 2 },
+            LV: { LS: 1, SF: 2, BC: 1 },
+            WS: { SF: 2 },
+            BC: { LV: 1 },
+            RC: { LS: 2 },
+        };
+        const relativePath = '/sampleData/path/example-00.txt';
+        const absolutePath = getAbsoluteFromRelativePath( relativePath );
+        const graph = await generateGraph( absolutePath );
+        expect( graph ).toEqual( rightGraph );
+    });
+});
