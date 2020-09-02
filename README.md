@@ -9,7 +9,7 @@ Para resolver o problema foi utilizada a linguagem de programação `JavaScript`
 - Utils: alguns algoritmos úteis para manipulação de arquivos.
   
 ## Execução
-Como o programa utiliza JavaScript é preciso utilizar um Gerenciador de Pacotes para rodá-lo.
+Como o programa utiliza JavaScript é preciso utilizar um Gerenciador de Pacotes para rodá-lo.  
 Podendo ser NPM ou YARN:
   
 #### Instalar dependências:
