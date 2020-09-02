@@ -1,7 +1,7 @@
 # SanAndreas Problem
 
-#### Cobertura de código (Code Coverage)
-```
+### Cobertura de código (Code Coverage)
+```bash
 yarn run test
 ```
 
