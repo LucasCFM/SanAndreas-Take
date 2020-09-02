@@ -1,15 +1,16 @@
 # SanAndreas Problem
   
-## Intrdução
+## Introdução
 
-Este projeto tem como objetivo implementear um programa para resolver o Problema de Correio de San Andreas, que consiste em achar o menor caminho de entrega para um pacote que trafega de uma cidade a outra.
-Para resolver o problema foi utilizada a linguagem de programação JavaScript e os seguintes módulos foram implementados:
-- Dijkstra: um algoritmo com o objetivo de achar o caminho de menor custo entre dois nós de um grafo
-- Handlers: manipuladores de arquivos, para exportar deles as informações da disposição das cidades e as rotas das encomendas
-- Utils: alguns algorítmos úteis para manipulação de arquivos
+Este projeto tem como objetivo implementear um programa para resolver o Problema do Correio de San Andreas, que consiste em achar o menor caminho de entrega para um pacote que trafega de uma cidade a outra.
+Para resolver o problema foi utilizada a linguagem de programação `JavaScript` e os seguintes módulos foram implementados:
+- Dijkstra: um algoritmo com o objetivo de achar o caminho de menor custo entre dois nós de um grafo;
+- Handlers: manipuladores de arquivos, para exportar deles as informações da disposição das cidades e as rotas das encomendas;
+- Utils: alguns algoritmos úteis para manipulação de arquivos.
   
 ## Execução
-Como o programa utiliza JavaScript é preciso utilizar um Gerenciador de Pacotes para rodá-lo. Pode ser NPM ou YARN:
+Como o programa utiliza JavaScript é preciso utilizar um Gerenciador de Pacotes para rodá-lo.
+Podendo ser NPM ou YARN:
   
 #### Instalar dependências:
 ```bash
