@@ -41,5 +41,5 @@ A seguinte imagem demonstra a cobertura de código dos testes, ou seja, a porcen
   
 ![Cobertura do código pelos testes](docs/img/code-coverage.png)
   
-Para abrir esses resultados e fazer sua conferência é preciso rodar os testes, de acordo com os comandos de execução acima, logo que eles terminarem uma pasta chamada `_coverage_` é criada na raiz da aplicação, dentro dela estara um arquivo chamado `_index.html_`, abra ele no seu navegador (arrastando o arquivo para uma janela, ou digitando seu caminho no browser).
+Para abrir esses resultados e fazer sua conferência é preciso rodar os testes, de acordo com os comandos de execução acima, logo que eles terminarem uma pasta chamada `coverage` é criada na raiz da aplicação, dentro dela estara um arquivo chamado `index.html`, abra ele no seu navegador (arrastando o arquivo para uma janela, ou digitando seu caminho no browser).
   
