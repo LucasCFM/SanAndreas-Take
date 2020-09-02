@@ -14,23 +14,17 @@ Podendo ser NPM ou YARN:
   
 #### Instalar dependências:
 ```bash
-yarn install
-# OR
-npm install
+[yarn|npm] install
 ```
   
 #### Rodar a aplicação:
 ```bash
-yarn run start
-# OR
-npm run start
+[yarn|npm] run start
 ```
   
 #### Rodar os testes:
 ```bash
-yarn run test
-# OR
-npm run test
+[yarn|npm] run test
 ```
   
 ## Testes
