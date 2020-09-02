@@ -8,10 +8,10 @@ import _ from 'lodash';
 
 const getShortestPath = ( graph, startNode, endNode ) => {
     /*
-    @param graph    dict    a dictionary representation of a graph,
+    @param graph    dict    A dictionary representation of a graph,
                             each key is a node
-    @param start    string  a graph (dict) key
-    @param end      string  a graph (dict) key
+    @param start    string  A graph (dict) key
+    @param end      string  A graph (dict) key
     */
 
     if( !graph || !startNode || !endNode )
@@ -28,6 +28,9 @@ const getShortestPath = ( graph, startNode, endNode ) => {
 
 
 const runShortestPaths = async (pathFile, packagesFile) => {
+    if( !pathFile || !packagesFile )
+        throw Error( 'All filePaths must be provided' )
+
     const graph = await generateGraph( pathFile );
     const packagePaths = await readPackages( packagesFile );
     
@@ -37,9 +40,11 @@ const runShortestPaths = async (pathFile, packagesFile) => {
         packagePaths[i]['cost'] = cost;
     }
     console.log( packagePaths );
+    return packagePaths;
 };
 
 
 export {
+    getShortestPath,
     runShortestPaths
 };

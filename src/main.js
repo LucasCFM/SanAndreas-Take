@@ -11,4 +11,6 @@ const pathFileAbsolutePath = getAbsoluteFromRelativePath( pathFileRelativePath )
 const packageFileRelativePath = '/src/package.txt';
 const packageFileAbsolutePath = getAbsoluteFromRelativePath( packageFileRelativePath );
 
-runShortestPaths( pathFileAbsolutePath, packageFileAbsolutePath );
+console.log(
+    runShortestPaths( pathFileAbsolutePath, packageFileAbsolutePath )
+);
