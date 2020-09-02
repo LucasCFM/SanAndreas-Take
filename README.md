@@ -33,7 +33,7 @@ npm run test
 ```
   
 ## Testes
-Foram implementados testes unitários na aplicação, utilizando a biblioteca de tetes `Jest`, com o objetivo de cobrir os -edge cases- que podem ocorrer durante o funcionamento seu funcionamento.
+Foram implementados testes unitários na aplicação, utilizando a biblioteca de tetes `Jest`, com o objetivo de cobrir os _edge cases_ que podem ocorrer durante o seu funcionamento.
 
 ### Cobertura de código (Code Coverage)
 A seguinte imagem demonstra a cobertura de código dos testes, ou seja, a porcentagem do código que é executada quando os testes são rodados.
