@@ -39,7 +39,6 @@ const runShortestPaths = async (pathFile, packagesFile) => {
         const cost = getShortestPath( graphCopy, packagePaths[i].origin, packagePaths[i].destiny ).distance;
         packagePaths[i]['cost'] = cost;
     }
-    console.log( packagePaths );
     return packagePaths;
 };
 
