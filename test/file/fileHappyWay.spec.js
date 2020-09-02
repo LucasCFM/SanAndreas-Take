@@ -4,7 +4,7 @@ import { getAbsoluteFromRelativePath } from '@/utils/utils.js'
 
 describe("readFile test path", () => {
   test("it should return a array of lines inside file", async () => {
-    const rightLines = [
+    const correctLines = [
       'LS SF 1',
       'SF LS 2',
       'LS LV 1',
@@ -21,6 +21,6 @@ describe("readFile test path", () => {
     const relativePath = '/sampleData/path/example-00.txt';
     const absolutePath = getAbsoluteFromRelativePath( relativePath );
     const lines = await readFile( absolutePath );
-    expect( lines ).toEqual( rightLines );
+    expect( lines ).toEqual( correctLines );
   });
 });
